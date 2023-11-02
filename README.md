@@ -10,10 +10,10 @@ Goal: Implements 1-1-1 PSM among three treatment groups.
 Scores: Uses Generalized Propensity Score (GPS) via multinomial logistic regression, producing a probability score vector for each individual's group belonging.
 Data Processing: Applies the rectangular common support region method to refine the sample, followed by GPS recalculation.
 Matching: Adopts Lopez's vector matching method:
-	a. Select a reference group, perform k-means clustering with the other groups.
-	b. Conduct matching with replacement within clusters, using the reference group’s score.
-	c. Iterate steps with different reference groups.
-	d. Include individuals matched in all datasets for final analysis.
+a. Select a reference group, perform k-means clustering with the other groups.
+b. Conduct matching with replacement within clusters, using the reference group’s score.
+c. Iterate steps with different reference groups.
+d. Include individuals matched in all datasets for final analysis.
 
 ## Basic usage
 
